@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Lucas_Sernik_final_draft.aux
+The style file: econometrica.bst
+Database file #1: Lucas_Sernik_final_draft.bib
+Warning--I didn't find a database entry for "nicther:2018"
+Done.
+You've used 19 entries,
+            2327 wiz_defined-function locations,
+            636 strings with 6438 characters,
+and the built_in function-call counts, 8716 in all, are:
+= -- 901
+> -- 429
+< -- 0
++ -- 139
+- -- 124
+* -- 778
+:= -- 1701
+add.period$ -- 20
+call.type$ -- 19
+change.case$ -- 107
+chr.to.int$ -- 19
+cite$ -- 19
+duplicate$ -- 303
+empty$ -- 544
+format.name$ -- 146
+if$ -- 1666
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 15
+newline$ -- 69
+num.names$ -- 114
+pop$ -- 68
+preamble$ -- 1
+purify$ -- 107
+quote$ -- 0
+skip$ -- 288
+stack$ -- 0
+substring$ -- 531
+swap$ -- 51
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 206
+warning$ -- 0
+while$ -- 110
+width$ -- 0
+write$ -- 239
+(There was 1 warning)

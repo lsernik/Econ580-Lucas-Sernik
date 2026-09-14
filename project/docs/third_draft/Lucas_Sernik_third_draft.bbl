@@ -1,0 +1,56 @@
+\ifx\undefined\BySame
+\newcommand{\BySame}{\leavevmode\rule[.5ex]{3em}{.5pt}\ }
+\fi
+\ifx\undefined\textsc
+\newcommand{\textsc}[1]{{\sc #1}}
+\newcommand{\emph}[1]{{\em #1\/}}
+\let\tmpsmall\small
+\renewcommand{\small}{\tmpsmall\sc}
+\fi
+\begin{thebibliography}{}
+
+\harvarditem[{Atlas Brasil}]{{Atlas Brasil}}{{n.d.}}{atlas:idh}
+\textsc{{Atlas Brasil}}  ({n.d.}): ``HDIM total score, HDIM Income, HDIM
+  Longevity, HDIM Education,'' \url{http://www.atlasbrasil.org.br/ranking},
+  Accessed: 2026-04-08.
+
+\harvarditem[Besley and Case]{Besley and Case}{1995}{besley:1995}
+\textsc{Besley, T.,  {\small and} A.~Case}  (1995): ``Does Electoral
+  Accountability Affect Economics Policy Choices? Evidence from Gubernatorial
+  Term Limits,'' \emph{The Quarterly Journal of Economics}, 110(3), 769--799.
+
+\harvarditem[Fowler]{Fowler}{2024}{fowler:2024}
+\textsc{Fowler, A.}  (2024): ``Democracy Reform Primer Series: Term Limits,''
+  \emph{University of Chicago, Center for Effective Government}.
+
+\harvarditem[{Instituto Brasileiro de Geografia e Estatística}]{{Instituto
+  Brasileiro de Geografia e Estatística}}{{n.d.}}{IBGE:sidra}
+\textsc{{Instituto Brasileiro de Geografia e Estatística}}  ({n.d.}):
+  ``Population, GPD per capita, basic sanitation services and age distribution
+  for each municipality,''
+  \url{https://servicodados.ibge.gov.br/api/docs/agregados?versao=3}, Accessed:
+  2026-04-08.
+
+\harvarditem[Rogoff]{Rogoff}{1990}{rogoff:1990}
+\textsc{Rogoff, K.}  (1990): ``Equilibrium Political Budget Cycles,'' \emph{The
+  American Economic Review}, 80(1), 21--36.
+
+\harvarditem[{Tribunal de Contas do Estado de São Paulo}]{{Tribunal de Contas
+  do Estado de São Paulo}}{{n.d.}}{TCESP:expenses}
+\textsc{{Tribunal de Contas do Estado de São Paulo}}  ({n.d.}): ``Municipal
+  detailed expenses,'' \url{https://transparencia.tce.sp.gov.br/apis},
+  Accessed: 2026-04-08.
+
+\harvarditem[{Tribunal Superior Eleitoral}]{{Tribunal Superior
+  Eleitoral}}{{n.d.}a}{TSE:data}
+\textsc{{Tribunal Superior Eleitoral}}  ({n.d.}a): ``Candidacy 2016 and 2020,''
+  \url{https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleicao-arquivo/passo-1?},
+  Accessed: 2026-04-08.
+
+\harvarditem[{Tribunal Superior Eleitoral}]{{Tribunal Superior
+  Eleitoral}}{{n.d.}b}{TSE:eleicao}
+\textsc{\BySame{}}  ({n.d.}b): ``Cronologia das eleições,''
+  \url{https://www.tse.jus.br/eleicoes/historia/cronologia-das-eleicoes},
+  Accessed: 2026-04-08.
+
+\end{thebibliography}

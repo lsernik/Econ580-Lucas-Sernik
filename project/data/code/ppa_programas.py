@@ -1,9 +1,9 @@
 import pandas as pd
 
-path = "c:\\Users\\lucas\\Documents\\spring_2026\\econ_580\\project\\data\\ppa(2024-2027)\\CAD_PROGRAMAS_txt\\"
+path = "c:\\Users\\lucas\\Documents\\current\\spring_2026\\econ_580\\project\\data\\ppa(2024-2027)\\CAD_PROGRAMAS_txt\\"
 cols = ['COD_PROGRAMA', 'DS_PROGRAMA']
 
-df = pd.read_csv("c:\\Users\\lucas\\Documents\\spring_2026\\econ_580\\project\\data\\ppa(2024-2027)\\CAD_PROGRAMAS.csv",
+df = pd.read_csv("c:\\Users\\lucas\\Documents\\current\\spring_2026\\econ_580\\project\\data\\ppa(2024-2027)\\CAD_PROGRAMAS.csv",
                 encoding='latin-1',
                 sep=';'
 )

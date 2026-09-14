@@ -1,0 +1,7 @@
+Election Summary: VINHEDO
+========================================
+2016 winner was in reelection campaign:	Yes
+2016 incumbent ran in 2020:	No
+2020 winner was in reelection campaign:	No
+Number of candidates in 2016:	5
+Number of candidates in 2020:	6

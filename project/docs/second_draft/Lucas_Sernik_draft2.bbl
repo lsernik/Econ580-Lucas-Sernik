@@ -1,0 +1,59 @@
+\ifx\undefined\BySame
+\newcommand{\BySame}{\leavevmode\rule[.5ex]{3em}{.5pt}\ }
+\fi
+\ifx\undefined\textsc
+\newcommand{\textsc}[1]{{\sc #1}}
+\newcommand{\emph}[1]{{\em #1\/}}
+\let\tmpsmall\small
+\renewcommand{\small}{\tmpsmall\sc}
+\fi
+\begin{thebibliography}{}
+
+\harvarditem[Alder and Ordo{\~n}ez]{Alder and Ordo{\~n}ez}{2016}{alder:2016}
+\textsc{Alder, S.~D.,  {\small and} G.~Ordo{\~n}ez}  (2016): ``Deceptive
+  redistribution,'' \emph{Review of Economic Dynamics}, 22, 223--239.
+
+\harvarditem[Besley and Case]{Besley and Case}{1995}{besley:1995}
+\textsc{Besley, T.,  {\small and} A.~Case}  (1995): ``Does Electoral
+  Accountability Affect Economics Policy Choices? Evidence from Gubernatorial
+  Term Limits,'' \emph{The Quarterly Journal of Economics}, 110(3), 769--799.
+
+\harvarditem[Bohn]{Bohn}{2011}{bohn:2011}
+\textsc{Bohn, S.~R.}  (2011): ``Social Policy and Vote in Brazil: Bolsa
+  Família and the Shifts in Lula's Electoral Base,'' \emph{Latin American
+  Research Review}, 46(1), 54--79.
+
+\harvarditem[Corrêa and Cheibub]{Corrêa and Cheibub}{2016}{correa:2016}
+\textsc{Corrêa, D.~S.,  {\small and} J.~A. Cheibub}  (2016): ``The
+  Anti-Incumbent Effects of Conditional Cash Transfer Programs,'' \emph{Latin
+  American Politics and Society}, 58(1), 49--71.
+
+\harvarditem[Ferraz and Finan]{Ferraz and Finan}{2008}{ferraz:2008}
+\textsc{Ferraz, C.,  {\small and} F.~Finan}  (2008): ``Exposing Corrupt
+  Politicians: The Effects of Brazil's Publicly Released Audits on Electoral
+  Outcomes,'' \emph{The Quarterly Journal of Economics}, 123(2), 703--745.
+
+\harvarditem[Krueger]{Krueger}{1974}{krueger:1974}
+\textsc{Krueger, A.~O.}  (1974): ``The Political Economy of the Rent-Seeking
+  Society,'' \emph{The American Economic Review}, 64(3), 291--303.
+
+\harvarditem[Marques, Leite, Áquila Mendes, and Ferreira]{Marques, Leite,
+  Áquila Mendes, and Ferreira}{2009}{marques:2009}
+\textsc{Marques, R.~M., M.~G. Leite, Áquila Mendes,  {\small and} M.~R.~J.
+  Ferreira}  (2009): ``Discutindo o papel do Programa Bolsa Família na
+  decisão das eleições presidenciais brasileiras de 2006,'' \emph{Revista de
+  Economia Política}, 29(1), 114--132.
+
+\harvarditem[Robinson]{Robinson}{1950}{robinson:1950}
+\textsc{Robinson, W.~S.}  (1950): ``Ecological Correlations and Behavior of
+  Individuals,'' \emph{Americal Sociological Association}, 15(3), 351--357.
+
+\harvarditem[Smart and Sturn]{Smart and Sturn}{2013}{smart:2013}
+\textsc{Smart, M.,  {\small and} D.~M. Sturn}  (2013): ``Term limits and
+  electoral accountability,'' \emph{Journal of Public Economics}, 107, 93--102.
+
+\harvarditem[Soares]{Soares}{2012}{soares:2012}
+\textsc{Soares, S. S.~D.}  (2012): ``Bolsa Família, its design, its impact and
+  possibilities for the future,'' Working Paper.
+
+\end{thebibliography}

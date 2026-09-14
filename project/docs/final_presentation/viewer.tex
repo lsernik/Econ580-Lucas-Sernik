@@ -1,0 +1,34 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage{amsmath, amsthm, amssymb}
+
+\begin{document}
+
+\begin{equation}
+    s^{d}_{ikt} = \beta_0
+                + \beta_1 R_i
+                + \beta_2 \tilde{D}_{it}
+                + \beta_3 (R_i \times \tilde{D}_{it})
+                + \beta_4 E_{it}
+                + \beta_5 N_i
+                + \mathbf{X}_i'\boldsymbol{\gamma}
+                + \mu_t
+                + \varepsilon_{it}
+\end{equation}
+
+\begin{itemize}
+    \item $s^{d}_{ikt} = \frac{\text{Discretionary spending in category } k_{it}}{\text{Total discretionary spending}_{it}}$ is the share of discretionary expenditure allocated to category $k$ by municipality $i$ in year $t$, measuring the mayor's revealed spending preference within the discretionary budget
+    \item $R_i \in \{0,1\}$ is an indicator equal to 1 if the incumbent mayor elected in 2016 is eligible for reelection in 2020, and 0 otherwise
+    \item $\tilde{D}_{it} = D_{it} - \bar{D}$ is the demeaned discretionary share of total expenditure, where $D_{it} = \frac{\text{Total discretionary spending}_{it}}{\text{Total spending}_{it}}$ measures mayoral fiscal power --- the fraction of the total budget subject to discretionary allocation
+    \item $R_i \times \tilde{D}_{it}$ is the interaction term, capturing whether reelection incentives have a stronger effect on discretionary spending allocation when the mayor controls a larger share of the total budget
+    \item $E_{it}$ is total expenditure per capita in municipality $i$ and year $t$, controlling for overall fiscal scale
+    \item $\tilde{E}^{d}_{it}$ is total discretionary expenditure per capita, controlling for the absolute amount of discretionary resources available to the mayor
+    \item $N_i$ is the number of candidates in the 2016 election, proxying for political competition
+    \item $\mathbf{X}_i$ is a vector of pre-determined socioeconomic controls from the 2010 Census, including PIB per capita, municipal HDI, and the share of children in the population
+    \item $\mu_t$ denotes year fixed effects, absorbing aggregate time trends in federal transfer rules and macroeconomic conditions
+    \item $\varepsilon_{it}$ is the idiosyncratic error term, with standard errors clustered at the municipality level
+\end{itemize}
+
+The coefficient of interest is $\beta_1$, which identifies the effect of reelection eligibility on the allocation of discretionary spending across categories at the average level of fiscal discretion. The interaction coefficient $\beta_3$ tests whether this effect is stronger in municipalities where the mayor controls a larger fraction of total expenditure. Since $\tilde{D}_{it}$ is demeaned, $\beta_1$ is interpreted as the average treatment effect of reelection eligibility evaluated at the sample mean of fiscal discretion.
+
+\end{document}

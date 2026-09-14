@@ -50,3 +50,64 @@ official pdf related the definition of programs and products and how it
 changes over the years.
 
 TXT folders help visualize data
+
+6/3/2026
+
+Frederico Finan - Electrical accountability and corruption: evidence from audits of
+local governments
+
+Exposing corrupt politicians: the effects of brazils publicly released audits on electoral outcomes
+
+Offshore drilling municipalities get revenues depending where they are on the well. What they do
+with the extra money?
+
+10/3/2026
+
+Besley, Timothy, and Anne Case. 1995. “Does Electoral Accountability Affect Economic 
+Policy Choices? Evidence From Gubernatorial Term Limits.” The Quarterly Journal of 
+Economics 110(3): 769–798
+
+Talks about how governors who cannot be elected anymore change their spending patterns
+in the last year of their term
+
+https://effectivegov.uchicago.edu/primers/term-limits
+
+Something to read
+
+11/3/2026
+
+CAD_PROGRAMA_OBJETIVOS_ESTRATEGICOS
+
+COD_PRODUTO_ODS
+
+19/3/2026
+
+Do logit for first idea and see what are the optimal groupings that yield the more votes
+in the future. 
+
+Second idea - see how first term mayors spend, then compare with how they do it in second term,
+if reelected. Also, compare how lameducks spend against those who could be reelected
+
+24/3/2026
+
+Do file to get all data. Get data following the sample from the following link:
+https://transparencia.tce.sp.gov.br/sites/default/files/csv/despesas-adamantina-2025.zip
+Normal website: https://transparencia.tce.sp.gov.br/municipio/adamantina
+For elected people, look here https://sig.tse.jus.br/ords/dwapr/r/seai/sig-candidaturas/filtros?p100_current_page=20&session=109022422076300
+
+8/4/2026
+
+For control data, look at IBGE and calls made to them. Maybe use diff in diff, as nathan suggested?
+https://www.tse.jus.br/eleicoes/historia/cronologia-das-eleicoes This website contains all the elections made for mayor
+Finish running main, so we can get all the expenses data. Then see if election summaries make sense.
+If they do, run the csv function. Need to get control data from IBGE.
+
+Getting control data from other APIs. Need to check this http://www.atlasbrasil.org.br/ranking for IDH.
+Need to check this https://inepdata.inep.gov.br/analytics/saw.dll?Download and https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb/resultados for IDEB.
+
+16/4/2026
+
+Meeting with Simeon. Change regression to contain share of total expenditure as dependent variable. Make it so that 
+the D variable represents the discretion over total funds for a given municipality, not specific for a given category,
+since discretion makes it so that they can spend the money into anything. Make 2 new regressions. One that controls for total expenses/size
+of municipality. One that works with the share of total expenditure for each category

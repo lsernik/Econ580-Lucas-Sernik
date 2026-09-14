@@ -1,0 +1,109 @@
+\ifx\undefined\BySame
+\newcommand{\BySame}{\leavevmode\rule[.5ex]{3em}{.5pt}\ }
+\fi
+\ifx\undefined\textsc
+\newcommand{\textsc}[1]{{\sc #1}}
+\newcommand{\emph}[1]{{\em #1\/}}
+\let\tmpsmall\small
+\renewcommand{\small}{\tmpsmall\sc}
+\fi
+\begin{thebibliography}{}
+
+\harvarditem[{Atlas Brasil}]{{Atlas Brasil}}{{n.d.}}{atlas:idh}
+\textsc{{Atlas Brasil}}  ({n.d.}): ``HDIM total score, HDIM Income, HDIM
+  Longevity, HDIM Education,'' \url{http://www.atlasbrasil.org.br/ranking},
+  Accessed: 2026-04-08.
+
+\harvarditem[Barro]{Barro}{1973}{barro:1973}
+\textsc{Barro, R.~J.}  (1973): ``The Control of Politicians: An Economic
+  Model,'' \emph{Public Choice}, 14, 19--42.
+
+\harvarditem[Besley and Case]{Besley and Case}{1995}{besley:1995}
+\textsc{Besley, T.,  {\small and} A.~Case}  (1995): ``Does Electoral
+  Accountability Affect Economics Policy Choices? Evidence from Gubernatorial
+  Term Limits,'' \emph{The Quarterly Journal of Economics}, 110(3), 769--799.
+
+\harvarditem[Brender and Drazen]{Brender and Drazen}{2005}{brender:2005}
+\textsc{Brender, A.,  {\small and} A.~Drazen}  (2005): ``Political Budget
+  Cycles in New versus Established Democracies,'' \emph{Journal of Monetary
+  Economics}, 52(7), 1271--1295.
+
+\harvarditem[Brollo and Nannicini]{Brollo and Nannicini}{2012}{brollo:2012}
+\textsc{Brollo, F.,  {\small and} T.~Nannicini}  (2012): ``Tying Your Enemy's
+  Hands in Close Races: The Politics of Federal Transfers in {Brazil},''
+  \emph{American Political Science Review}, 106(4), 742--761.
+
+\harvarditem[Brollo, Nannicini, Perotti, and Tabellini]{Brollo, Nannicini,
+  Perotti, and Tabellini}{2013}{brollo:2013}
+\textsc{Brollo, F., T.~Nannicini, R.~Perotti,  {\small and} G.~Tabellini}
+  (2013): ``The Political Resource Curse,'' \emph{American Economic Review},
+  103(5), 1759--1796.
+
+\harvarditem[Colonnelli, Prem, and Teso]{Colonnelli, Prem, and
+  Teso}{2020}{colonnelli:2020}
+\textsc{Colonnelli, E., M.~Prem,  {\small and} E.~Teso}  (2020): ``Patronage
+  and Selection in Public Sector Organizations,'' \emph{American Economic
+  Review}, 110(10), 3071--3099.
+
+\harvarditem[Drazen and Eslava]{Drazen and Eslava}{2010}{drazen:2010}
+\textsc{Drazen, A.,  {\small and} M.~Eslava}  (2010): ``Electoral Manipulation
+  via Voter-Friendly Spending: Theory and Evidence,'' \emph{Journal of
+  Development Economics}, 92(1), 39--52.
+
+\harvarditem[Eleitoral]{Eleitoral}{{n.d.}}{TSE:eleicao}
+\textsc{Eleitoral, T.~S.}  ({n.d.}): ``Cronologia das eleições,''
+  \url{https://www.tse.jus.br/eleicoes/historia/cronologia-das-eleicoes},
+  Accessed: 2026-04-08.
+
+\harvarditem[Ferejohn]{Ferejohn}{1986}{ferejohn:1986}
+\textsc{Ferejohn, J.}  (1986): ``Incumbent Performance and Electoral Control,''
+  \emph{Public Choice}, 50(1), 5--25.
+
+\harvarditem[Ferraz and Finan]{Ferraz and Finan}{2011}{ferraz:2011}
+\textsc{Ferraz, C.,  {\small and} F.~Finan}  (2011): ``Electoral Accountability
+  and Corruption: Evidence from the Audits of Local Governments,''
+  \emph{American Economic Review}, 101(4), 1274--1311.
+
+\harvarditem[{Instituto Brasileiro de Geografia e Estatística}]{{Instituto
+  Brasileiro de Geografia e Estatística}}{{n.d.}}{IBGE:sidra}
+\textsc{{Instituto Brasileiro de Geografia e Estatística}}  ({n.d.}):
+  ``Population, GPD per capita, basic sanitation services and age distribution
+  for each municipality,''
+  \url{https://servicodados.ibge.gov.br/api/docs/agregados?versao=3}, Accessed:
+  2026-04-08.
+
+\harvarditem[Nichter]{Nichter}{2018}{nichter:2018}
+\textsc{Nichter, S.}  (2018): \emph{Votes for Survival: Relational Clientelism
+  in {Latin America}}. Cambridge University Press, Cambridge.
+
+\harvarditem[Rogoff]{Rogoff}{1990}{rogoff:1990}
+\textsc{Rogoff, K.}  (1990): ``Equilibrium Political Budget Cycles,'' \emph{The
+  American Economic Review}, 80(1), 21--36.
+
+\harvarditem[Shi and Svensson]{Shi and Svensson}{2006}{shi:2006}
+\textsc{Shi, M.,  {\small and} J.~Svensson}  (2006): ``Political budget cycles:
+  Do they differ across countries and why?,'' \emph{Journal of Public
+  Economics}, 90(8--9), 1367--1389.
+
+\harvarditem[Toral]{Toral}{2024}{toral:2024}
+\textsc{Toral, G.}  (2024): ``How Patronage Delivers: Political Appointments,
+  Bureaucratic Accountability, and Service Delivery in {Brazil},''
+  \emph{American Journal of Political Science}, 68(2), 797--815.
+
+\harvarditem[{Tribunal de Contas do Estado de São Paulo}]{{Tribunal de Contas
+  do Estado de São Paulo}}{{n.d.}}{TCESP:expenses}
+\textsc{{Tribunal de Contas do Estado de São Paulo}}  ({n.d.}): ``Municipal
+  detailed expenses,'' \url{https://transparencia.tce.sp.gov.br/apis},
+  Accessed: 2026-04-08.
+
+\harvarditem[{Tribunal Superior Eleitoral}]{{Tribunal Superior
+  Eleitoral}}{{n.d.}}{TSE:data}
+\textsc{{Tribunal Superior Eleitoral}}  ({n.d.}): ``Candidacy 2016 and 2020,''
+  \url{https://sig.tse.jus.br/ords/dwapr/r/seai/sig-eleicao-arquivo/passo-1?},
+  Accessed: 2026-04-08.
+
+\harvarditem[Veiga and Veiga]{Veiga and Veiga}{2007}{veiga:2007}
+\textsc{Veiga, L.~G.,  {\small and} F.~J. Veiga}  (2007): ``Political Business
+  Cycles at the Municipal Level,'' \emph{Public Choice}, 131(1--2), 45--64.
+
+\end{thebibliography}

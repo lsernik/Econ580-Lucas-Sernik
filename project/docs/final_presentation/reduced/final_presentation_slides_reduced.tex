@@ -1,0 +1,522 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{default}
+\usepackage{amsmath}
+\usepackage{booktabs}
+
+% Add this line to fix the slide counter
+\usepackage{appendixnumberbeamer}
+
+\setbeamertemplate{navigation symbols}{}
+
+\title[Electoral Accountability]{Electoral Accountability and Economic Policy}
+\subtitle{Based on Besley \& Case (1995)}
+\author{Lucas Sernik}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+%--- MOTIVATION ---%
+\begin{frame}{Motivation}
+\begin{itemize}
+    \item A central question in political economy: \textbf{do electoral incentives discipline politicians?}
+    \vspace{0.3em}
+    \item Do politicians act in the public interest, or do they use political power for personal gain?
+    \vspace{0.3em}
+    \item The desire to maintain a reputation is often thought to keep politicians in check
+    \vspace{0.3em}
+    \item Officials who care to run again must act in voters' interest to merit reelection
+    \vspace{0.3em}
+    \item But what happens when reelection is no longer possible?
+    \vspace{0.3em}
+    \item \textbf{Besley \& Case (1995)} exploit gubernatorial term limits in U.S. states to test this
+\end{itemize}
+\end{frame}
+
+%--- THEORETICAL FRAMEWORK ---%
+\begin{frame}{Theoretical Framework: Reputation-Building Model}
+\begin{itemize}
+    \item Based on Banks \& Sundaram (1993)
+    \vspace{0.5em}
+    \item Each governor has an unobservable \textbf{type} $\omega \in \{\omega_1, ..., \omega_N\}$
+    \vspace{0.5em}
+    \item Takes unobservable \textbf{effort} $\alpha$, which affects policy outcome $r$
+    \vspace{0.5em}
+    \item Voters observe $r$ and use it to infer the governor's type via Bayes' rule
+\end{itemize}
+\vspace{0.5em}
+\begin{block}{Two Regimes}
+\begin{enumerate}
+    \item \textbf{Term-limited (lame duck)}: maximizes immediate payoffs --- puts in less effort
+    \item \textbf{Reelection-eligible}: puts in extra effort to build reputation and secure reelection
+\end{enumerate}
+\end{block}
+\end{frame}
+
+%--- RELEVANCE FOR OUR PAPER ---%
+\begin{frame}{Relevance for Our Paper}
+\begin{block}{Besley \& Case (1995) establish:}
+\begin{enumerate}
+    \item Reelection incentives discipline politicians' fiscal behavior
+    \item Term limits provide exogenous variation in electoral incentives
+    \item The effect operates through reputation-building, not party discipline
+\end{enumerate}
+\end{block}
+\vspace{0.5em}
+\begin{alertblock}{Our contribution}
+We apply this framework to \textbf{Brazilian municipalities} in São Paulo, asking whether reelection eligibility affects \textbf{spending composition} --- not just the level of taxes and spending --- and whether this effect is moderated by \textbf{fiscal discretion}.
+\end{alertblock}
+\end{frame}
+
+%--- CONTEXT: BRAZILIAN MUNICIPAL ELECTIONS ---%
+\begin{frame}{Brazilian Municipal Elections}
+\begin{itemize}
+    \item Brazilian municipalities hold \textbf{direct elections} for mayor every four years
+    \vspace{0.5em}
+    \item Elections are held simultaneously across all municipalities --- in our sample, the relevant elections occurred in \textbf{2016} and \textbf{2020}
+    \vspace{0.5em}
+    \item São Paulo state alone has \textbf{645 municipalities}, ranging from the capital with over 12 million inhabitants to small rural towns with fewer than 1,000 residents
+\end{itemize}
+\end{frame}
+
+%--- TERM LIMITS ---%
+\begin{frame}{Term Limits in Brazilian Municipalities}
+\begin{itemize}
+    \item Brazilian law limits mayors to \textbf{two consecutive terms} in office
+    \vspace{0.5em}
+    \item A mayor elected in 2016 for the \textbf{first time} is eligible to run again in 2020
+    \vspace{0.5em}
+    \item A mayor elected in 2016 who was \textbf{already serving their first term} since 2012 faces a binding term limit and cannot run in 2020
+    \vspace{0.5em}
+    \item This generates clean variation in reelection incentives \textbf{within the same election cycle} across municipalities
+\end{itemize}
+\begin{block}{Identification}
+    Comparing mayors who can run again in 2020 against those who cannot, conditional on controls, isolates the causal effect of reelection incentives on spending behavior.
+\end{block}
+\end{frame}
+
+%--- INSTITUTIONAL SETTING: WHO CONTROLS SPENDING? ---%
+\begin{frame}{Who Controls Municipal Spending?}
+\begin{itemize}
+    \item Brazilian municipalities operate under a \textbf{separation of powers}: the \textit{Câmara dos Vereadores} (city council) approves laws and the annual budget, while the \textbf{mayor executes it}
+    \vspace{0.5em}
+    \item In practice, the mayor has \textbf{substantial discretion} over spending composition through several channels:
+    \vspace{0.5em}
+    \begin{enumerate}
+        \item \textbf{Budget proposal}: the mayor drafts the annual budget (\textit{Lei Orçamentária Anual}), which the council typically approves with minor modifications
+        \vspace{0.3em}
+        \item \textbf{Execution discretion}: the mayor controls the \textit{timing} and \textit{allocation} of expenditures within approved categories
+        \vspace{0.3em}
+        \item \textbf{Supplementary credits}: the mayor can open \textit{créditos suplementares} to reallocate spending across categories without full council approval
+        \vspace{0.3em}
+        \item \textbf{Administrative decisions}: hiring, procurement, and contracting decisions --- which shape spending composition in practice --- are executive prerogatives
+    \end{enumerate}
+\end{itemize}
+\end{frame}
+
+%--- FISCAL DISCRETION ---%
+\begin{frame}{The Limits of Mayoral Discretion}
+\begin{itemize}
+    \item Not all spending is equally subject to mayoral discretion
+    \vspace{0.5em}
+    \item A large share of municipal revenue is \textbf{constitutionally earmarked}:
+    \vspace{0.5em}
+    \begin{itemize}
+        \item \textbf{FUNDEB}: at least 25\% of tax revenue must be spent on education
+        \item \textbf{SUS transfers}: federal health transfers are earmarked exclusively to health spending
+        \item \textbf{Convênios}: federal and state grants are tied to specific programs
+    \end{itemize}
+    \vspace{0.5em}
+    \item What remains after earmarked transfers is \textbf{treasury revenue} (\textit{tesouro}) --- the discretionary budget the mayor truly controls
+    \vspace{0.5em}
+    \item This motivates our key moderating variable: the \textbf{share of total spending funded by discretionary treasury resources}, $D_{it}$, which measures how much fiscal power the mayor actually has
+\end{itemize}
+\end{frame}
+
+%--- RESEARCH QUESTION ---%
+\begin{frame}{Our Research Question}
+\begin{block}{Central Question}
+Do reelection incentives affect how Brazilian mayors allocate their \textbf{discretionary} budget across spending categories?
+\end{block}
+\vspace{1em}
+\begin{itemize}
+    \item We follow Besley \& Case (1995) in using \textbf{term limits} as a source of exogenous variation in reelection incentives
+    \vspace{0.5em}
+    \item Our contribution is to focus on \textbf{spending composition} rather than aggregate levels, and to explicitly account for \textbf{fiscal discretion} as a moderating force
+    \vspace{0.5em}
+    \item The Brazilian context is particularly informative because \textbf{heavy earmarking} limits mayoral discretion --- if political budget cycles exist, they should be concentrated in the discretionary budget
+\end{itemize}
+\end{frame}
+
+%--- DATA SOURCES ---%
+\begin{frame}{Data Sources}
+\begin{itemize}
+    \item \textbf{Municipal expenditure data}: Tribunal de Contas do Estado de São Paulo (TCESP)
+    \begin{itemize}
+        \item Annual expenditure records by spending category and funding source
+        \item 643 municipalities, 2017--2024
+    \end{itemize}
+    \vspace{0.5em}
+    \item \textbf{Electoral data}: Tribunal Superior Eleitoral (TSE)
+    \begin{itemize}
+        \item Candidate-level data for 2016 and 2020 municipal elections
+        \item Reelection eligibility, vote shares, number of candidates
+    \end{itemize}
+    \vspace{0.5em}
+    \item \textbf{Socioeconomic controls}: IBGE Census 2010 and Atlas Brasil
+    \begin{itemize}
+        \item Population, PIB per capita, age distribution
+        \item Municipal HDI, sanitation access, infant mortality
+    \end{itemize}
+    \item All socioeconomic controls are measured in 2010, eliminating reverse causality concerns.
+\end{itemize}
+\end{frame}
+
+%--- DEPENDENT VARIABLE ---%
+\begin{frame}{Dependent Variable: Discretionary Spending Share}
+\begin{itemize}
+    \item Standard measures of municipal spending conflate \textbf{mayoral choices} with \textbf{mechanically earmarked transfers}
+    \vspace{0.5em}
+    \item We focus instead on the \textbf{discretionary spending share}:
+\end{itemize}
+\vspace{0.5em}
+\begin{block}{Dependent Variable}
+\begin{equation*}
+    s^{d}_{ikt} = \frac{\text{Discretionary spending in category } k_{it}}{\text{Total discretionary spending}_{it}} \times 100
+\end{equation*}
+\end{block}
+\vspace{0.5em}
+\begin{itemize}
+    \item \textbf{Discretionary spending} = expenditure funded by \textit{tesouro} or \textit{recursos próprios da administração indireta}
+    \item \textbf{Earmarked spending} = federal/state transfers and special funds (\textit{FUNDEB}, \textit{SUS}, \textit{convênios})
+    \vspace{0.5em}
+    \item $s^{d}_{ikt}$ measures \textbf{how much of total discretionary money did the mayor choose to put in a given category} --- a genuine revealed preference for spending priority.
+\end{itemize}
+\end{frame}
+
+%--- KEY VARIABLES ---%
+\begin{frame}{Key Variables}
+\begin{itemize}
+    \item \textbf{Treatment variable} $R_{i_t} \in \{0,1\}$:
+    \item $R_{i_t} \in \{0,1\}$ varies at the \textbf{municipality-term} level:
+\begin{itemize}
+    \item For 2017--2020: $R_{i_1} = 1$ if the 2016 winner was in their \textbf{first term}, eligible to run in 2020; $R_{i_1} = 0$ if they had already served since 2012
+    \item For 2021--2024: $R_{i_2} = 1$ if the 2020 winner was in their \textbf{first term}, eligible to run in 2024; $R_{i_2} = 0$ if they had already served since 2016
+\end{itemize}
+\item Predetermined relative to spending: determined by prior election outcomes before each term begins
+    \vspace{0.5em}
+    \item \textbf{Moderating variable} $D_{it}$:
+    \begin{itemize}
+        \item Discretionary share of total expenditure:
+        \begin{equation*}
+            D_{it} = \frac{\text{Total discretionary spending}_{it}}{\text{Total spending}_{it}} \times 100
+        \end{equation*}
+        \item Measures \textbf{mayoral fiscal power} --- how much of the total budget the mayor truly controls
+        \item Varies at the municipality-year level as federal transfer rules and revenues change
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+%--- REGRESSION EQUATION ---%
+\begin{frame}{Regression Equation}
+\begin{block}{Estimated Model}
+\begin{equation*}
+    s^{d}_{ikt} = \beta_0
+                + \beta_1 R_{it}
+                + \beta_2 \tilde{D}_{it}
+                + \beta_3 (R_{it} \times \tilde{D}_{it})
+                + \beta_4 E_{it}
+                + \beta_5 N_{it}
+                + \mathbf{X}_i'\boldsymbol{\gamma}
+                + \mu_t
+                + \varepsilon_{it}
+\end{equation*}
+\end{block}
+\vspace{0.3em}
+\begin{itemize}
+    \item $s^{d}_{ikt}$: discretionary spending share in category $k$, municipality $i$, year $t$
+    \item $R_{it}$: reelection eligibility --- varies at municipality-term level
+    \item $\tilde{D}_{it}$: demeaned discretionary share of total expenditure
+    \item $R_{it} \times \tilde{D}_{it}$: interaction --- does greater fiscal discretion amplify the effect of reelection incentives on spending composition?
+    \item $E_{it}$: total expenditure per capita
+    \item $N_{it}$: number of candidates in the relevant election --- varies at municipality-term level
+    \item $\mathbf{X}_i$: 2010 Census controls (PIB per capita, IDHM, share of children)
+    \item $\mu_t$: year fixed effects
+\end{itemize}
+\end{frame}
+
+%--- COEFFICIENTS OF INTEREST ---%
+\begin{frame}{Coefficients of Interest}
+\begin{itemize}
+    \item $\beta_1$ --- \textbf{main effect of reelection eligibility}:
+    \begin{itemize}
+        \item Effect of reelection eligibility on discretionary spending composition \textbf{at the sample mean of fiscal discretion} ($\bar{D} = 71.4\%$)
+        \item If $\beta_1 \neq 0$: reelection incentives distort discretionary spending composition
+        \item If $\beta_1 = 0$: no political budget cycle in discretionary spending
+    \end{itemize}
+    \vspace{0.5em}
+    \item $\beta_2$ --- \textbf{effect of fiscal discretion on spending composition}:
+    \begin{itemize}
+        \item How spending shares change as fiscal discretion moves \textbf{above or below the sample mean} of 71.4\%
+        \item Positive $\beta_2$: above average fiscal discretion $\rightarrow$ more spending in that category
+        \item Negative $\beta_2$: above average fiscal discretion $\rightarrow$ less spending in that category
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Coefficients of Interest}
+\begin{itemize}
+    \item $\beta_3$ --- \textbf{moderation effect of fiscal discretion on reelection incentives}:
+    \begin{itemize}
+        \item How the spending gap between reelection-eligible and term-limited mayors changes as fiscal discretion moves above or below its sample mean
+        \item Negative $\beta_3$: gap \textbf{narrows} for above-average discretion municipalities
+        \item Positive $\beta_3$: gap \textbf{widens} for above-average discretion municipalities
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+%--- SPENDING CATEGORIES ---%
+\begin{frame}{Spending Categories}
+\begin{itemize}
+    \item We estimate the model separately for \textbf{six functional spending categories} from TCESP data
+\end{itemize}
+\vspace{0.5em}
+\begin{table}
+\centering
+\small
+\begin{tabular}{lp{7cm}}
+\toprule
+\textbf{Category} & \textbf{Description} \\
+\midrule
+Health (\textit{Saúde}) & Primary healthcare, hospitals, and public health programs \\
+Education (\textit{Educação}) & Schools, teachers, and educational infrastructure \\
+Urbanismo & Urban infrastructure, roads, and public works \\
+Social Assistance & Welfare programs and social protection \\
+Administration & General government overhead and bureaucracy \\
+Transport & Public transportation and road maintenance \\
+\bottomrule
+\end{tabular}
+\end{table}
+\vspace{0.5em}
+\begin{itemize}
+    \item Health and education are heavily constrained by \textbf{constitutional earmarking} (SUS, FUNDEB) --- the reelection effect and its moderation by fiscal discretion are expected to be concentrated in the remaining categories where mayors have genuine room to maneuver
+\end{itemize}
+\end{frame}
+
+%--- RESULTS OVERVIEW ---%
+\begin{frame}{Results Overview}
+\begin{itemize}
+    \item We estimate the model separately for six spending categories
+    \vspace{0.5em}
+    \item Results are organized around three findings:
+    \vspace{0.5em}
+    \begin{enumerate}
+        \item \textbf{Reelection eligibility} ($\beta_1$) significantly affects discretionary spending in \textbf{urbanismo} and \textbf{administration}
+        \vspace{0.3em}
+        \item \textbf{Fiscal discretion} ($\beta_2$) shapes spending composition independently of electoral incentives in \textbf{social assistance}, \textbf{transport}, and \textbf{urbanismo}
+        \vspace{0.3em}
+        \item The \textbf{moderation effect} ($\beta_3$) is statistically significant in \textbf{social assistance} and \textbf{administration}, but economically negligible
+    \end{enumerate}
+    \vspace{0.5em}
+    \item Health, education, and transport show \textbf{no significant reelection effect} --- consistent with constitutional earmarking limiting mayoral discretion in these categories
+\end{itemize}
+\end{frame}
+
+%--- FINDING 1: SUMMARY TABLE ---%
+\begin{frame}{Finding 1: Reelection Eligibility and Spending Composition}
+\begin{table}
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccc}
+\hline\hline
+ & \multicolumn{4}{c}{Coefficient on $R_{it}$ ($\beta_1$)} \\
+\cmidrule(lr){2-5}
+Category & Estimate & Std. Error & T-stat & P-value \\
+\hline
+Health          & $-$0.093 & 0.279 & $-$0.34 & 0.738 \\
+Education       & 0.065    & 0.199 & 0.32    & 0.746 \\
+Urbanismo       & $-$0.963$^{***}$ & 0.299 & $-$3.22 & 0.001 \\
+Social Assist.  & 0.080    & 0.100 & 0.80    & 0.425 \\
+Administration  & 1.027$^{***}$    & 0.373 & 2.75    & 0.006 \\
+Transport       & 0.023    & 0.201 & 0.11    & 0.910 \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$. Clustered SE at municipality level.}
+\end{tabular}%
+}
+\end{table}
+\vspace{0.5em}
+\begin{itemize}
+    \item Reelection eligibility affects spending composition \textbf{only through urbanismo and administration}
+\end{itemize}
+\end{frame}
+
+%--- FINDING 1A: URBANISMO SLIDE 1 ---%
+\begin{frame}{Finding 1: Reelection Eligibility and Urbanismo}
+\begin{block}{Result}
+Reelection-eligible mayors allocate \textbf{0.96 percentage points less} of their discretionary budget to urbanismo relative to term-limited mayors ($\beta_1 = -0.963$, $p = 0.001$)
+\end{block}
+\vspace{1em}
+\begin{itemize}
+    \item Urbanismo covers \textbf{urban infrastructure, roads, and public works} --- a category historically associated with corruption in Brazilian municipalities
+    \vspace{1em}
+    \item We interpret the \textbf{negative} $\beta_1$ as evidence of \textbf{electoral accountability constraining opportunistic spending}: reelection-eligible mayors restrain infrastructure spending because corruption in public works carries electoral risk before the next election
+\end{itemize}
+\end{frame}
+
+%--- FINDING 1A: URBANISMO SLIDE 2 ---%
+\begin{frame}{Finding 1: Reelection Eligibility and Urbanismo}
+\begin{block}{Result}
+Reelection-eligible mayors allocate \textbf{0.96 percentage points less} of their discretionary budget to urbanismo relative to term-limited mayors ($\beta_1 = -0.963$, $p = 0.001$)
+\end{block}
+\vspace{1em}
+\begin{itemize}
+    \item Term-limited mayors, facing \textbf{no future electoral punishment}, increase discretionary urbanismo spending --- consistent with rent extraction through inflated construction contracts, a well-documented phenomenon in Brazilian public administration
+    \vspace{1em}
+    \item This is consistent with the \textbf{reputation-building model}: accountability disciplines mayors when reelection is at stake, and opportunistic behavior emerges when it is not
+\end{itemize}
+\end{frame}
+
+%--- FINDING 1B: ADMINISTRATION SLIDE 1 ---%
+\begin{frame}{Finding 1: Reelection Eligibility and Administration}
+\begin{block}{Result}
+Reelection-eligible mayors allocate \textbf{1.03 percentage points more} of their discretionary budget to administration relative to term-limited mayors ($\beta_1 = 1.027$, $p = 0.006$)
+\end{block}
+\vspace{1em}
+\begin{itemize}
+    \item Administration covers \textbf{general government overhead}, including public hiring and bureaucratic expenditure
+    \vspace{1em}
+    \item We interpret this as evidence of \textbf{political patronage}: reelection-seeking mayors strategically expand the municipal payroll to generate electoral loyalty
+\end{itemize}
+\end{frame}
+
+%--- FINDING 1B: ADMINISTRATION SLIDE 2 ---%
+\begin{frame}{Finding 1: Reelection Eligibility and Administration}
+\begin{block}{Result}
+Reelection-eligible mayors allocate \textbf{1.03 percentage points more} of their discretionary budget to administration relative to term-limited mayors ($\beta_1 = 1.027$, $p = 0.006$)
+\end{block}
+\vspace{1em}
+\begin{itemize}
+    \item This is consistent with the broader literature on \textbf{political clientelism} in Brazilian municipalities, where public employment is a well-documented tool of electoral mobilization
+    \vspace{1em}
+    \item Importantly, this effect is identified \textbf{within the discretionary budget} --- it reflects a genuine mayoral choice to prioritize administrative hiring over service delivery when reelection is at stake
+\end{itemize}
+\end{frame}
+
+%--- FINDING 2A: FISCAL DISCRETION SLIDE 1 ---%
+\begin{frame}{Finding 2: Fiscal Discretion and Spending Composition}
+\begin{block}{Result}
+The discretionary share of total expenditure ($\tilde{D}_{it}$) significantly shapes spending composition in three categories, independently of electoral incentives
+\end{block}
+\vspace{0.5em}
+\begin{table}
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccc}
+\hline\hline
+Category & Estimate & Std. Error & T-stat & P-value \\
+\hline
+Social Assist.  & $+$0.054$^{***}$ & 0.015 & 3.63 & 0.000 \\
+Transport       & $+$0.069$^{***}$ & 0.025 & 2.74 & 0.006 \\
+Urbanismo       & $-$0.095$^{**}$  & 0.041 & $-$2.33 & 0.020 \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$.}
+\end{tabular}%
+}
+\end{table}
+\vspace{0.5em}
+\end{frame}
+
+\begin{frame}{Finding 2: Fiscal Discretion and Spending Composition}
+\begin{block}{Result}
+The discretionary share of total expenditure ($\tilde{D}_{it}$) significantly shapes spending composition in three categories, independently of electoral incentives
+\end{block}
+\vspace{1em}
+\begin{itemize}
+    \item Municipalities with \textbf{above average fiscal discretion} allocate proportionally more to social assistance and transport --- when mayors have more budget freedom than the typical municipality, these categories reflect \textbf{genuine mayoral spending preferences}
+    \item Municipalities with \textbf{above average fiscal discretion} allocate proportionally \textbf{less} to urbanismo --- when mayors have more fiscal freedom, infrastructure competes less successfully for discretionary funds as other categories absorb the additional room to maneuver
+\end{itemize}
+\end{frame}
+
+
+% --- FINDING 2B: FISCAL DISCRETION SLIDE 2 ---%
+\begin{frame}{Finding 2: Fiscal Discretion and Spending Composition}
+\begin{block}{Result}
+The discretionary share of total expenditure ($\tilde{D}_{it}$) significantly shapes spending composition in three categories, independently of electoral incentives
+\end{block}
+\vspace{1em}
+\begin{itemize}
+    \item \textbf{Robustness check:} Fiscal discretion is \textbf{not simply a proxy for municipal wealth} --- the correlation between $\tilde{D}_{it}$ and PIB per capita is only 0.12, and with IDHM only 0.21
+\end{itemize}
+\end{frame}
+
+% --- FINDING 3: INTERACTION ---%
+\begin{frame}{Finding 3: The Moderation Effect}
+\begin{block}{Result}
+The interaction $R_{it} \times \tilde{D}_{it}$ reveals \textbf{heterogeneity in the form of electoral manipulation} depending on the level of fiscal discretion
+\end{block}
+\vspace{0.5em}
+\begin{table}
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccc}
+\hline\hline
+Category & Estimate & Std. Error & T-stat & P-value \\
+\hline
+Health         & $+$0.079$^{*}$   & 0.047 & 1.68 & 0.094 \\
+Social Assist. & $-$0.040$^{***}$ & 0.014 & $-$2.84 & 0.005 \\
+Administration & $-$0.149$^{**}$  & 0.057 & $-$2.60 & 0.009 \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$.}
+\end{tabular}%
+}
+\end{table}
+\end{frame}
+
+%--- FINDING 3: INTERPRETATION ---%
+\begin{frame}{Finding 3: Conditional Clientelism}
+\begin{block}{Unified Interpretation}
+The form of electoral manipulation depends on \textbf{how much fiscal room a mayor has}
+\end{block}
+\vspace{0.5em}
+\begin{itemize}
+    \item \textbf{Mayors with below average fiscal discretion} rely on \textbf{two electoral instruments simultaneously}:
+    \begin{itemize}
+        \item \textbf{Patronage hiring} --- expanding the municipal payroll generates electoral loyalty when discretionary funds are scarce, with the effect growing stronger as discretion falls below the mean
+        \item \textbf{Social assistance} --- targeting direct transfers to voters becomes the preferred electoral tool when fiscal room is tight
+    \end{itemize}
+    \vspace{0.5em}
+    \item \textbf{Mayors with above average fiscal discretion} show \textbf{attenuated effects} in both categories --- at one standard deviation above the mean, the administration effect ($+1.027$ pp) is nearly fully offset ($-1.12$ pp), suggesting that patronage hiring becomes unnecessary when mayors have ample budget room
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Finding 3: Conditional Clientelism}
+\begin{block}{Unified Interpretation}
+The form of electoral manipulation depends on \textbf{how much fiscal room a mayor has}
+\end{block}
+\vspace{0.5em}
+\begin{itemize}
+    \item This is consistent with a \textbf{conditional clientelism} story: fiscal constraint shapes the instruments of electoral manipulation, with cash-strapped mayors relying more heavily on patronage and direct transfers
+\end{itemize}
+\end{frame}
+
+%--- NULL RESULTS ---%
+\begin{frame}{The Null Results: Health and Education}
+\begin{itemize}
+    \item Reelection eligibility has \textbf{no significant effect} on discretionary spending shares for health or education
+    \vspace{0.5em}
+    \item This is consistent with \textbf{constitutional earmarking} constraining mayoral choices even within the discretionary budget:
+    \begin{itemize}
+        \item FUNDEB mandates minimum education spending --- mayors face political and legal costs from deviating
+        \item SUS transfers create institutional pressures to maintain health spending levels
+    \end{itemize}
+    \vspace{0.5em}
+    \item The null results are a \textbf{substantive finding}, not a failure of the model --- they confirm that institutional constraints on spending are binding even at the level of discretionary allocation
+    \vspace{0.5em}
+    \item This contributes to the literature on \textbf{fiscal federalism and political accountability}: earmarking effectively insulates key social spending from electoral manipulation, even when mayors have discretionary resources available
+\end{itemize}
+\end{frame}
+\end{document}

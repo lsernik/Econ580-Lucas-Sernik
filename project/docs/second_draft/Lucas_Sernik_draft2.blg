@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Lucas_Sernik_draft2.aux
+The style file: econometrica.bst
+Database file #1: refs.bib
+Done.
+You've used 10 entries,
+            2327 wiz_defined-function locations,
+            581 strings with 5187 characters,
+and the built_in function-call counts, 4865 in all, are:
+= -- 498
+> -- 244
+< -- 0
++ -- 80
+- -- 72
+* -- 443
+:= -- 927
+add.period$ -- 10
+call.type$ -- 10
+change.case$ -- 58
+chr.to.int$ -- 10
+cite$ -- 10
+duplicate$ -- 165
+empty$ -- 308
+format.name$ -- 80
+if$ -- 929
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 9
+newline$ -- 42
+num.names$ -- 60
+pop$ -- 37
+preamble$ -- 1
+purify$ -- 58
+quote$ -- 0
+skip$ -- 159
+stack$ -- 0
+substring$ -- 324
+swap$ -- 29
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 110
+warning$ -- 0
+while$ -- 60
+width$ -- 0
+write$ -- 130

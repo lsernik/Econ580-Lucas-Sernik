@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+\section*{Empirical Model}
+
+Let $s_{ikt}$ denote the share of total expenditure allocated to category $k$ by municipality $i$ in year $t$. The baseline model is:
+
+\begin{equation}
+    s_{ikt} = \beta_0 
+            + \beta_1 R_i 
+            + \beta_2 D_{ikt} 
+            + \beta_3 (R_i \times D_{ikt}) 
+            + \beta_4 E_{it} 
+            + \mathbf{X}_i'\boldsymbol{\gamma} 
+            + \mathbf{P}_i'\boldsymbol{\delta} 
+            + \mu_t 
+            + \varepsilon_{it}
+\end{equation}
+
+\noindent where:
+
+\begin{itemize}
+    \item $R_i \in \{0,1\}$ is an indicator equal to 1 if the incumbent mayor elected in 2016 in municipality $i$ is eligible for reelection in 2020, and 0 otherwise
+    \item $D_{ikt} \in [0,1]$ is the share of expenditure in category $k$, in municipality $i$ and year $t$ funded by non-earmarked sources (\textit{tesouro} and \textit{recursos próprios}), measuring fiscal discretion
+    \item $R_i \times D_{ikt}$ is the interaction term, capturing whether reelection incentives have a stronger effect on spending composition in a given category when the mayor has greater fiscal discretion
+    \item $E_{it}$ is total expenditure per capita in municipality $i$ and year $t$
+    \item $\mathbf{X}_i$ is a vector of pre-determined socioeconomic controls measured at the 2010 Census, including PIB per capita, municipal HDI, infant mortality rate, sanitation access, mean salary, school attendance rate, and age distribution shares
+    \item $\mathbf{P}_i$ is a vector of political controls, including the number of candidates in the 2016 election and an indicator for whether the 2016 winner was running as an incumbent
+    \item $\mu_t$ denotes year fixed effects
+    \item $\varepsilon_{it}$ is the idiosyncratic error term
+\end{itemize}
+
+\noindent The coefficient of interest is $\beta_1$, which identifies the effect of reelection eligibility on spending composition. The interaction coefficient $\beta_3$ tests whether this effect is moderated by fiscal discretion.
+
+\end{document}

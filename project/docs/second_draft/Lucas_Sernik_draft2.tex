@@ -1,0 +1,34 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage{harvard}
+\usepackage{setspace}
+
+\setstretch{1.25}
+
+\author{Lucas Sernik}
+\date{\today}
+\title{Second Draft: Effect of term limits on Economic Policy choices in municipalities from São Paulo: A Case Study}
+
+\begin{document}
+\maketitle
+
+\quad After receiving feedback from the peer reviews, I noticed that I indeed have 2 ideas being developed that involve the same dataset that I am working with throught the APIs, with information on all the transactions that the São Paulo municipalities took part between 2014--2025. This led me to come up with 2 separate research questions that I will look into with more focus. After analyzing for both of them, I will likely report the one that yielded the more interesting results. My first revised research question is the following: how does the term limit in mayors mandates in Brazilian municipalities, specifically in the state of São Paulo, affect Economic Policy choices?
+
+\quad This is the idea that I now belive is a bit more straightforward. Besley and Case (1995) make a compelling study that provides empirical evidence to the vast theoretical literature on politicians and what drives their decisions. They argue that the existence of term limits might distort politicians incentives concerning which policies are implemented. After setting their theoretical framework and some of its shortcomings, they analyze state governors through the years 1950 to 1986 and conclude that ``lame ducks'', governors who cannot run for the next term, increase their spending and taxations in their last term, which might be impopular, since they generally do not need to mantain their political reputation. They point out that term limits might have adverse effects on economic policy, arguing that politicians might behave differently and be more inefficient due to the different incentives that such rule imposes on their constrained maximization problem.
+
+\quad In the context of my research, I would utilize a similar theoretical framework and use the data now available for the municipalities in the state of São Paulo to test if a ``lame duck'' politician behaves differently than one that can run for reelection, also accounting for differences among right wing and left wing political parties. Since I can access data related to two and a half municipal terms, I could do a comprehensive empirical case study of their theory in the State of São Paulo, where politicians are limited to two consecutive terms for the mayor position.
+
+\quad My second revised research question is similar to the one presented in the first draft: Do incumbents utilize conditional cash transfer programs and other initiatives to get more votes in their next election as a way to sway voters to their political base?
+
+\quad As one of the peer reviewers pointed out and as I hinted in the first draft, if my purpose with this is to prove causality between conditional cash transfer programs and getting votes from people benefitiated in the next election cycle, I would probably not be able to. I do not know who people who were beneficiaries of such actions voted for. This is related to the concept of ``ecological fallacy'', presented by Robinson (1950), where we utilize correlations between groups of people and not individuals, mainly because of lack of individual data. He states that these are not the same and should not be treated as such, as many studies do. The peer reviewer recommended that I utilized an IV. Besley (1995) don't use IVs and simply add some control variables, usually macroeconomic indicators and demographic ratios, as a way to reduce ommited variable bias. A similar approach is done in Ferraz and Finan (2013), even though they took advantage of the exogeneity provided by the randomness of municipalities audited. I am still unsure about this point.
+
+\quad I started exploring the available data in the state of São Paulo. Starting with the initial municipality of Adamantina, the main document for the expenses contain 23 columns with information of each expense in a given year. The first grouping will be related to whether an expense is ``Liquidated'', ``Encumbered'', ``Paid'' or ``Cancelled''. I believe that filtering by ``Encumbered'' or ``Liquidated'' are the ones that make more sense among all. ``Liquidated'' seem to be best, since it indicates that a service or product was provided to the public but the government has not yet paid the supplier. This would allow people to receive such benefit and considered it in the next election cycle. In a perfectly informed model and society, ``Encumbered'' expenses would make sense as an indicator, as everyone would know the state would likely incur such expenses in the future.
+
+\quad Exploring more of the dataset, I understood the different scopes of policies and terminologies regarding budgeting and laws in Brazil. In increasing order of scope, we have the following: actions, products, programs. Some information about the expense can be obtained at all specifications. However, some of them would incur utilizing a LLM to extract meaning in a somewhat systematic way. In order to test my questions, I should run different models on different categories of expenses and see how the coefficients change for each one of them. My next step here is to filter products through the use of the words ``reducing inequalities'', which are present in at least 2 products descriptions. This will be a good starting point for my actual quantitative analysis.
+
+\quad Another thing that might help me explore my topic is understanding the PPA, which stands for the multi-annual plan. It is a law that is passed on the first year after municipal elections, which states what are the main objectives for the next 4 years, declaring explicit directives, objectives, metrics for such objectives, and goals that should be achieved at the ending of their mandate. We can ``estimate'' whether a candidate should be reelected if they were able to succeed in such goals. This should be the case, since the directives are stablished to promote the public good. This could be then compared with their spending, and argue whether if voters care in reality if such goals were achieved or not.
+
+\bibliographystyle{econometrica}
+\bibliography{refs}
+
+\end{document}

@@ -1,0 +1,22 @@
+\documentclass[12pt, a4paper]{article}
+
+\author{Lucas Sernik}
+\date{\today}
+
+\begin{document}
+{\large Lucas Sernik's Peer Review of Jesse Schmolze First Draft}
+
+\vspace{1 cm}
+
+\quad Jesse Schmolze wants to find a relationship between two understood theories in economics: the positive relationship between institutional quality, transparency, openness and economic growth, and the repercussions of a given growth shock across countries with different economies through trade and capital flows. He seeks a relationship between such spillovers caused by economic shocks and some observed variables that indicate institutional quality.
+
+\quad Given the impressive analysis that you are proposing, it would be interesting to see if you could stablish a relationship between economic growth of a given country before and after the recent wave of trade wars and restrictions. A country's quality of institutions is likely to not have changed significantly over the period when Trump started to tariff other countries. A coulpe of problems with this approach is that there might not be enough data to show statistical significance to this claim, and it would be a considerable amount of work to track which tarrifs were applied to which product to each country over a extended period of time.
+
+\quad Related to the dataset, maybe you could take a look into OECD data or data and reports from NGOs related to government transparency.
+
+\quad Given your goals with the project, I believe that an estimation of the proposed model would help you answer your research question adequatly. Maybe try to introduce one dependent variable for each one of the ``institutional quality'' aspects that you are analyzing, instead of collapsing them into a single one. Then, you would have betas and marginal effects for each one of them.
+
+\quad About the appendix, I find it a really useful text that contextualizes the method utilized to someone that might not have been exposed to them. I am no specialist in Machine Learning, but I have not heard the term ``regularization bias'' (also didn't find anything with a quick search on Google). As far as I understand, regularization is a process where we introduce some bias into our model to avoid overfitting (high variance), which would yield better predictions in the test set/new data. This is done by introducing a loss function that is likely to shrink the effect of some regressors and diminish their impact on the independent variable.
+
+\quad On the Panel extension, it might be relevant to say that ``panel data violates this assumption by having correlated observations, as they occur in sequence of each other through time'' or some other sentence that highlights the correlation between observations in panel data.
+\end{document}

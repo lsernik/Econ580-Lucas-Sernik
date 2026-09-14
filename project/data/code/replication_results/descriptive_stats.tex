@@ -1,0 +1,37 @@
+\begin{table}[htbp]
+\centering
+\caption{Descriptive Statistics}
+\label{tab:descriptive}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrr}
+\hline\hline
+Variable & $N$ & Mean & SD & Min & P25 & Median & P75 & Max \\
+\hline
+\multicolumn{9}{l}{\textit{Panel A: Dependent variables (discretionary spending share, \%)}} \\
+\quad Health (\textit{Saúde}) & 5,144 & 26.348 & 5.175 & 0.00e+00 & 23.064 & 26.221 & 29.645 & 50.795 \\
+\quad Education (\textit{Educação}) & 5,144 & 15.122 & 3.969 & 5.491 & 12.392 & 14.558 & 17.239 & 52.599 \\
+\quad Urbanismo & 5,116 & 11.746 & 5.121 & 0.00e+00 & 8.268 & 11.253 & 14.913 & 34.400 \\
+\quad Social Assistance & 5,144 & 4.676 & 1.913 & 0.00e+00 & 3.302 & 4.469 & 5.683 & 22.365 \\
+\quad Administration & 5,144 & 17.684 & 6.636 & 4.346 & 13.229 & 16.588 & 21.126 & 50.668 \\
+\quad Transport & 3,726 & 3.287 & 3.102 & 0.00e+00 & 0.9832 & 2.454 & 4.514 & 20.927 \\
+\hline
+\multicolumn{9}{l}{\textit{Panel B: Key regressors}} \\
+\quad Reelection eligibility ($R_{it}$) & 5,144 & 0.7970 & 0.4022 & 0.00e+00 & 1.000 & 1.000 & 1.000 & 1.000 \\
+\quad Discretionary share ($D_{it}$, \%) & 5,144 & 71.443 & 7.489 & 38.571 & 66.591 & 71.697 & 76.419 & 94.398 \\
+\quad Demeaned discretionary share ($\tilde{D}_{it}$) & 5,144 & -8.84e-15 & 7.489 & -32.873 & -4.852 & 0.2537 & 4.976 & 22.954 \\
+\quad Interaction ($R_{it} \times \tilde{D}_{it}$) & 5,144 & -0.1034 & 6.764 & -32.873 & -3.528 & 0.00e+00 & 3.604 & 22.954 \\
+\hline
+\multicolumn{9}{l}{\textit{Panel C: Controls}} \\
+\quad Log population ($\ln P_i$) & 5,144 & 9.632 & 1.382 & 6.691 & 8.547 & 9.452 & 10.543 & 14.016 \\
+\quad Number of candidates ($N_{it}$) & 5,144 & 3.932 & 2.345 & 1.000 & 2.000 & 3.000 & 5.000 & 17.000 \\
+\quad PIB per capita (R\$) & 5,144 & 1,762,171 & 5,498,120 & 18,877 & 96,738 & 246,197 & 1,024,226 & 54,363,858 \\
+\quad IDHM & 5,144 & 0.7395 & 0.0324 & 0.6390 & 0.7190 & 0.7380 & 0.7610 & 0.8620 \\
+\quad Share of children (\%) & 5,144 & 29.900 & 3.549 & 10.590 & 27.500 & 29.960 & 32.270 & 41.390 \\
+\hline\hline
+\multicolumn{9}{l}{\footnotesize Panel A variables are measured as percentage shares of total discretionary spending.} \\
+\multicolumn{9}{l}{\footnotesize $D_{it}$ is the share of total expenditure funded by discretionary treasury resources (\%).} \\
+\multicolumn{9}{l}{\footnotesize $\tilde{D}_{it} = D_{it} - \bar{D}$ where $\bar{D} = 71.4\%$ is the sample mean.} \\
+\multicolumn{9}{l}{\footnotesize PIB per capita in 2010 BRL. Population from 2010 IBGE Census.} \\
+\end{tabular}%
+}
+\end{table}

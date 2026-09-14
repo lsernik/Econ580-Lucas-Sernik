@@ -1,0 +1,25 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage{lasstyle}
+
+\begin{document}
+
+\begin{center}
+{\large \textbf{Lucas' Sernik Peer Review of Pranav's Gupta Second Draft}}
+\end{center}
+
+\vspace{1cm}
+
+With the recent countrywide legalization of sportsbetting, Pranav wants to use the new available data to test the Efficient Market Hypothesis on NFL betting markets, and confirm if ``in-game betting markets systematically overreact to momentum--shifting plays''.
+
+Given the ``true'' probability that is given by the nflfastRXGBoostWP model, he wants to compare it against the true odds seen in the betting market, which are presumably mostly influenced humans and would be susceptible for irrational pricing, contradicting Efficient Market Hypothesis.
+
+
+The paper has good theoretical foundation and it would be interesting to see how EMH holds in this case. It would be intersting to see if someting can be said about the demographics of those who bet. I don't know about the nature of the data itself, but if you could find some pattern or interesting correlation between odds that are fair priced in specific states and some statistic like employment, education or regulation, you could give even better justification and highlight the importance of your findings.
+
+Also, one other concern is if you have any way of identifying whether a bet was made by an actual human being or not. This would depend on the type of data that is available to you. If there are many algorithmic betting in a given market, which would be reacting to live plays regardless of biases, your results could be an overstatement.
+
+It would also be interesting to have some precise notion of what a change in momentum is, or what is a big play. Different ways of characterizing such concepts could work as a robustness check.
+
+Maybe there is not enough data to give statistical significance to my next idea, but it would be interesting to contrast regular season games with playoff games or even rivalry games. Maybe games where there are more stakes involved have a wider gap between the theoretical win probability and the perceived win probability from the betting markets, which could also be exploited by smart bettors.
+\end{document}
